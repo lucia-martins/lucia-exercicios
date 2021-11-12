@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicios JavaScript</title>
+</head>
+<body>
+    <main>
+        <h1>Textos, números e formúlarios</h1>
+        <form action="teste.php" method="get" onsubmit="return apresentar()">
+            <label for="nome">Qual é o seu nome?</label>
+            <input type="text" name="nome" id="nome" maxlength="25" placeholder="digite seu primeiro nome">
+            <br><input type="submit" value="verificar"> 
+            
+        </form>
+        <p id="frase">Aqui vai aparecer o resultado ... </p>
+    </main> 
+    <script>
+        let frase = document.getElementById('frase')
+        frase.style.visibility = "hidden"
+
+        function apresentar() {
+            let nome = document.getElementById("nome").value
+            frase.style.visibility = "visible"
+            frase.innerHTML = `Olá, <em>${nome}</em>! É um grande prazer te conhecer!  &#x1F91D;` 
+            return 
+        }
+
+        
+
+    </script>
+    
+</body>
+</html>
