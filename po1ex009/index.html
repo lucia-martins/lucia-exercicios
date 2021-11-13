@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>exercício JavaScript</title>
     <style>
-        body{
+        body {
+
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             background-color: yellowgreen;
         }
 
-        main 
+        main {
+
             max-width: 500px;
             margin: auto;
         }
@@ -21,7 +23,7 @@
             padding: 5px;
             margin: 10px;
             border-radius: 5px;
-        }            
+        }           
                     
     </style>
 </head>
@@ -34,10 +36,15 @@
                 <input type="number" name="n1" id="n1" min="1" max="100" value="1">
 
                 <br><label for="n2">Número 2:</label>
-                <input type="number" name="n2" min="1" max="100" value="1">
+                <input type="number" name="n2" id="n2" min="1" max="100" value="1">
 
                 <br><input type="submit" value="Calcular">
             </form>
+        </section>
+        <section id="resultado">
+            <h2>analisando os números</h2>
+            <p id="frase">Resultado final</p>
+            <button onclick="fechar()"Fechar></button>
         </section>
     </main>
     <script>
