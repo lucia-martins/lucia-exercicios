@@ -56,15 +56,16 @@
             res.style.visibility = "hidden"
         }
 
-        function calcular() [
+        function calcular() {
             let n1 = Number(document.getElementById("n1").value)
-            let n2 = number(document.getElementById("n2").value)
+            let n2 = Number(document.getElementById("n2").value)
             res.style.visibility = "visible"
             frase.innerHTML = `Usuário informou os números ${n1} e ${n2}:<br>`
             frase.innerHTML += `<br>${n1} + ${n2} = ${n1+n2}`
             frase.innerHTML += `<br>${n1} - ${n2} = ${n1-n2}`
             frase.innerHTML += `<br>${n1} x ${n2} = ${n1*n2}`
             frase.innerHTML += `<br>${n1} ÷ ${n2} = ${n1/n2}`
+
             return false
         }
     </script>
