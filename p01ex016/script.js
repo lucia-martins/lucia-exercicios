@@ -3,8 +3,7 @@ frase = document.getElementById("frase")
 res.style.visibility = "hidden"
 
 function fechar() {
-    res.style.visibility = "hidden"
-    
+    res.style.visibility = "hidden"    
 }
 
 function reajustar() {
