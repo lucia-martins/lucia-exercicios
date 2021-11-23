@@ -6,8 +6,14 @@ body {
     background-position: top center;
     background-size: cover;
     background-attachment: fixed;
+<<<<<<< HEAD
 }
 
+=======
+
+
+}
+>>>>>>> cfa2a80189e24cc8dae7860091c1d3622581b01f
 main {
     max-width: 550px;
     margin: auto;
@@ -18,4 +24,8 @@ section {
     padding: 5px;
     margin: 10px;
     border-radius: 5px;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> cfa2a80189e24cc8dae7860091c1d3622581b01f
