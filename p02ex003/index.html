@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio Javascript</title>
+</head>
+<body>
+    <main>
+        <h1> È par ou È impar ?</h1>
+        <p>Todo número par é divisível por 2  (resto 0), lembre-se disso. </p>
+
+        <form action="salvar.php" method ="get" onsubmit = "return parouimpar ()">
+            <label for = "num">Digite um número</label>
+            <input type = "number" name = "num" id = "num" min = "1" max = "1000000" value = "1">
+            <input type = "submit" value = "VERIFICAR">
+    
+        </form>
+        <P id="resposta">O número é par ou impar?</P>
+    </main>
+    <script>
+        let resp = document.getElementById ("resposta")
+
+        function parouimpar ( ) {
+            let num = Number(document.getElementById("num").value)
+            
+            resp.innerHTML = `O número ${num} que foi digitado`
+            if (num % 2 == 0) {
+               resp.innerHTML += ` È PAR!`
+        } else {
+            resp.innerHTML += ` É ÍMPAR!`            
+        }
+
+        return false
+    }    
+
+    </script>
+    
+</body>
+</html>
