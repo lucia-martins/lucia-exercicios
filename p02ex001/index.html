@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eExercicio Javascript</title>
+</head>
+<body>
+    <h1>Pedindo confirmação</h1>
+    <button onclick="confirma()">Confirma ou não?</button>
+
+    <script>
+        function confirma() {
+            let resp = window.confirm("Olá! Você quer confirmar ou cancelar esta ação?")
+
+            if (resp == true) {
+                // se quiser, também pode ser apenas if (resp), pois o true já estará implicito
+                window.alert("Você acabou de confirmar a ação ! Obrigado!")
+
+            } else {
+                window.alert("Ação cancelada com sucesso! Obrigado!")
+            }
+
+        }
+    </script>
+
+</body>
+</html>
