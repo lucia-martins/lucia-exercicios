@@ -1,4 +1,4 @@
-let res =document. document.getElementById("resultado")
+let res = document.getElementById("resultado")
 let frase = document.getElementById("frase")
 
 function fechar() {
@@ -6,7 +6,7 @@ function fechar() {
 }
 
 function alunos() {
-    let nomw = document.getElementById("nome").value
+    let nome = document.getElementById("nome").value
     let n1 = Number(document.getElementById("n1").value)
     let n2 = Number(document.getElementById("n2").value)
     let med = (n1+n2)/2
@@ -14,3 +14,4 @@ function alunos() {
     res.style.visibility = "visible"
     return false
 }
+

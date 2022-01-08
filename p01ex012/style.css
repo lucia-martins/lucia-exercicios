@@ -2,11 +2,13 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: chocolate;
 }
+
 main{
     max-width: 550px;
     margin: auto;
 
 }
+
 section{
     background-color: white;
     padding: 5px;
