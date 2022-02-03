@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio JavaScripit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Maior, menor ou igual</h1>        
+    </header>
+    <main>
+        <p>Coloque dois números no formulário abaixo e vamos analisá-lós e compará-los entre si.</p>
+        <form action="salvar.php" method="get" onsubmit="return comparar()">
+        <label for="n1">Número 1: </label>
+        <input type="number" name="n1" id="n1" min="-1000" max="1000" value="0">
+        <br><label for="n2">Número 2: </label>
+        <input type="number" name="n2" id="n2" min="-1000" max="1000" value="0">
+        <br><input type="submit" value="Comparar">
+        </form>
+    </main>
+    <section id="saida">
+        <h2 id="resultado">comparando</h2>
+        <p id="mensagen">Resultado...</p>
+        <button onclick="fechar()">Fechar</button>
+    </section>
+    <footer>
+        <p>Exercício criando para ETEOT</p>
+    </footer>
+    <script src="script"></script>
+
+    
+    
+</body>
+</html>

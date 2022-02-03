@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+boby {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: coral;
+    padding: 0;
+    margin: 0;
+}
+
+header, main, section {
+    max-width: 500px;
+    margin: auto;
+}
+
+header {
+    background-color: rgb(red, green, blue);
+    color:white;
+    text-shadow: 2px 2px 0px black;
+    padding: 30px;
+    border-radius: 0px 0px 10px 10px;
+    text-align: center;
+}
+
+main {
+    background-color: white;
+    padding: 10px;
+    border-radius: 0px 0px 10px 10px;
+    margin-top: 0px;
+
+}
+
+section {
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+
+}
+
+footer {
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 3px;
+    background-color: rgb(red, green, blue);
+    color: white;
+    text-align: center;
+}

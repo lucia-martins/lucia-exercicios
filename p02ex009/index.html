@@ -5,22 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício javaScript</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main>
         <section id="entrada">
             <h1>Promoção Dia das Mulheres</h1>
             <p>No Dia das mulheres estamos dando descontos em todas as compras, mas as mulheres ganham um desconto maior (15%) do que os homens (10%). </p>
-            <form action=salvar.php" method="get" onsubmit="return descontao()">
+            <form action="salvar.php" method="get" onsubmit="return descontao()">
                 <label for="preco">Valor da Compra: R$</label>
                 <input type="number" name="preco" id="preco" min="1" max="10000" value="0" step="0.5">
                 <br><fieldset>
                     <legend>Sexo</legend>
-                    <input type="radio" name="sexo" id="masc" onchange="mudasexo()" >
+                    <input type="radio" name="sexo" id="masc" onchange="mudasexo()">
                     <label for="masc">Masculino</label>
                     <input type="radio" name="sexo" id="femi" checked onchange="mudasexo()">
                     <label for="femi">Feminino</label>
-
+                    
                 </fieldset>
                 <br><input type="submit" value="Calcular Desconto">   
 
@@ -33,6 +34,6 @@
             <button onclick="fechar()">Fechar</button>
         </section>        
     </main>
-    <script src="script,js"></script>     
+    <script src="script.js"></script>     
 </body>
 </html>
