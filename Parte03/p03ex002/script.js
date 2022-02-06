@@ -14,15 +14,15 @@ function situacao() {
     let media = (nota1 + nota2) / 2
     let situacao = "" 
 
-    if (media < 4) {
+    if ( media < 4) {
         situacao = "<span class = 'tipo1'>REPROVADO</span>"        
-    } else if (media >=4 && media < 7) {
+    } else if ( media >= 4 && media < 7) {
         situacao = "<span calss='tipo2'>EM RECUPERAÇÃO</span>"
-    } else if (media >=7) {
+    } else if ( media >= 7) {
         situacao = "<span class='tipo3'>APROVADO</span>"
     }
 
-    frase.innerHTML = 'O aluno ${nome} obteve <strong>média ${media}</strong> e por conta disso está ${situação}'
+    frase.innerHTML = `O aluno ${nome} obteve <strong>média ${media}</strong> e por conta disso está ${situação}`
     saida.style.visibility = "visible"
     return false
 }
